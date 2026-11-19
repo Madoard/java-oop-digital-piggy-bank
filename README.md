@@ -27,4 +27,22 @@
 - **₊˚💫 Encapsulamento e Coleções:** Implementação da classe `Cofrinho` encapsulando um `ArrayList<Moeda>` para adicionar, remover, listar e somar o valor total convertido em Real (`BRL`).
 - **₊˚🌷 CLI Interativa (`Main`):** Estruturação de um loop de menu no console em `Main` para lidar com as entradas do usuário e transações de moedas.
 
-<p align="center">‧₊˚ ☁️⋅♡𓂃
+<p align="center">‧₊˚ ☁️⋅♡𓂃 ࣪ ִֶָ☾. ─────────────────────── ‧₊˚ ☁️⋅♡𓂃 ࣪ ִֶָ☾.</p>
+
+### ╰┈➤ ꒰ 🍰 ꒱ Arquitetura do Projeto (`java-oop-digital-piggy-bank/`)
+
+| Arquivo | Vibe | Descrição |
+| :--- | :---: | :--- |
+| `Main.java` | 🍓 | Menu interativo de console e controlador do fluxo do usuário |
+| `Cofrinho.java` | 🗝️ | Gerencia o `ArrayList<Moeda>` e a conversão total para `BRL` |
+| `Moeda.java` | ☁️ | Classe base abstrata que define o contrato das moedas |
+| `Real.java` | 🌸 | Implementação do Real Brasileiro (`BRL`) |
+| `Dolar.java` | 🌙 | Implementação do Dólar Americano (`USD`) com conversão cambial |
+| `Euro.java` | ✨ | Implementação do Euro (`EUR`) com conversão cambial |
+
+<br/>
+
+<div align="center">
+  <p>°•. 🍒 .•° ────── ꒰ 💗 ꒱ ────── °•. 🍒 .•°</p>
+  <p><i>feito com 💗 por <b>Maria Eduarda Gonçalves</b></i></p>
+</div>
