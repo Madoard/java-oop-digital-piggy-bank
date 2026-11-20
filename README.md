@@ -106,7 +106,7 @@ public abstract class Moeda {
 ```
 
 - **Abstração e igualdade em `Moeda.java`:** Define o atributo `protected double valor`, os métodos abstratos `info()` e `converter()`, e sobrescreve `equals(Object obj)` comparando tipo (`getClass()`) e valor (`Double.compare`) para permitir a remoção na lista.
-- **Taxas e formatação nas subclasses:** `Real.java` retorna o próprio `valor` na conversão[cite: 8], `Dolar.java` multiplica por `5.20` e `Euro.java` multiplica por `6.00`[cite: 11], cada uma implementando `info()` e `converter()`.
+- **Taxas e formatação nas subclasses:** `Real.java` retorna o próprio `valor` na conversão, `Dolar.java` multiplica por `5.20` e `Euro.java` multiplica por `6.00`, cada uma implementando `info()` e `converter()`.
 - **Coleção e soma total em `Cofrinho.java`:** Encapsula um `ArrayList<Moeda>` com métodos para `adicionar`, `remover`, `listagemMoedas()` (chamando `m.info()` em cada item) e `totalConvertido()` (somando `m.converter()`).
 - **Fluxo interativo em `Main.java`:** Usa `Scanner` e um loop `while (opcao != 0)` com `switch` para adicionar, remover, listar moedas e exibir o total convertido em `BRL` com `System.out.printf("Total acumulado no cofrinho (em Real): R$ %.2f\n", total)`.
 
