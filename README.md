@@ -46,8 +46,7 @@ O funcionamento do cofrinho segue os princípios e comportamentos definidos nas 
     git clone https://github.com/Madoard/java-oop-digital-piggy-bank.git
     cd java-oop-digital-piggy-bank/java-oop-digital-piggy-bank
    ```
-
-   ```
+   
 4. **Compile e execute o projeto:**
    ```bash
    javac *.java
