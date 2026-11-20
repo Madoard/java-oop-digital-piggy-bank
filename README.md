@@ -43,8 +43,11 @@ O funcionamento do cofrinho segue os princípios e comportamentos definidos nas 
 1. **Pré-requisitos:** Tenha o **JDK (Java Development Kit)** instalado na máquina para compilar e executar classes Java (`javac` e `java`).
 2. **Clone o repositório e acesse a pasta dos arquivos fonte:**
    ```bash
-   git clone [https://github.com/Madoard/java-oop-digital-piggy-bank.git](https://github.com/Madoard/java-oop-digital-piggy-bank.git)
-   cd java-oop-digital-piggy-bank/java-oop-digital-piggy-bank
+    git clone https://github.com/Madoard/java-oop-digital-piggy-bank.git
+    cd java-oop-digital-piggy-bank/java-oop-digital-piggy-bank
+  ```
+
+Ficou tudo certo agora? Se quiser ajustar mais alguma coisa ou mandar o próximo projeto, é só falar!
    ```
 3. **Compile e execute o projeto:**
    ```bash
