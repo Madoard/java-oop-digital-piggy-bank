@@ -2,7 +2,7 @@
 
   <p>─────────────────────── ✦ ───────────────────────</p>
 
-  <h1>˚₊‧꒰ა Cofrinho Digital Multimoedas ໒꒱‧₊˚</h1>
+  <h1>꒰ა Cofrinho Digital Multimoedas ໒꒱</h1>
 
   <p>
     <i>Aplicação de console desenvolvida em Java com Programação Orientada a Objetos para gerenciar depósitos, saques e conversões de moedas para Real (BRL).</i>
