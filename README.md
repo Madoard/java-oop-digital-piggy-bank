@@ -45,11 +45,10 @@ O funcionamento do cofrinho segue os princípios e comportamentos definidos nas 
    ```bash
     git clone https://github.com/Madoard/java-oop-digital-piggy-bank.git
     cd java-oop-digital-piggy-bank/java-oop-digital-piggy-bank
-  ```
-
-Ficou tudo certo agora? Se quiser ajustar mais alguma coisa ou mandar o próximo projeto, é só falar!
    ```
-3. **Compile e execute o projeto:**
+
+   ```
+4. **Compile e execute o projeto:**
    ```bash
    javac *.java
    java Main
