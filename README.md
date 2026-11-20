@@ -45,12 +45,12 @@ O funcionamento do cofrinho segue os princípios e comportamentos definidos nas 
    ```bash
    git clone [https://github.com/Madoard/java-oop-digital-piggy-bank.git](https://github.com/Madoard/java-oop-digital-piggy-bank.git)
    cd java-oop-digital-piggy-bank/java-oop-digital-piggy-bank
-   ```[cite: 7]
+   ```
 3. **Compile e execute o projeto:**
    ```bash
    javac *.java
    java Main
-   ```[cite: 8, 9, 10, 11]
+   ```
 
 ### ✦ Exemplo de Uso
 
@@ -83,13 +83,13 @@ Total acumulado no cofrinho (em Real): R$ 52,00
 Escolha outra opção (1-Add, 2-Rem, 3-List, 4-Total, 0-Sair):
 0
 Sistema encerrado. Até logo!
-```[cite: 10]
+```
 
 <p align="center">─────────────────────── · ───────────────────────</p>
 
 ### ✦ Como Foi Construído
 
-O projeto está dividido nas classes [Moeda.java](java-oop-digital-piggy-bank/Moeda.java)[cite: 7, 9], [Real.java](java-oop-digital-piggy-bank/Real.java)[cite: 7, 8], [Dolar.java](java-oop-digital-piggy-bank/Dolar.java)[cite: 7], [Euro.java](java-oop-digital-piggy-bank/Euro.java)[cite: 7, 11], [Cofrinho.java](java-oop-digital-piggy-bank/Cofrinho.java)[cite: 7] e [Main.java](java-oop-digital-piggy-bank/Main.java)[cite: 7, 10]. Abaixo estão os pontos centrais da implementação:
+O projeto está dividido nas classes [Moeda.java](java-oop-digital-piggy-bank/Moeda.java), [Real.java](java-oop-digital-piggy-bank/Real.java), [Dolar.java](java-oop-digital-piggy-bank/Dolar.java), [Euro.java](java-oop-digital-piggy-bank/Euro.java), [Cofrinho.java](java-oop-digital-piggy-bank/Cofrinho.java) e [Main.java](java-oop-digital-piggy-bank/Main.java). Abaixo estão os pontos centrais da implementação:
 
 ```java
 public abstract class Moeda {
@@ -102,36 +102,12 @@ public abstract class Moeda {
     public abstract void info();
     public abstract double converter();
 }
-```[cite: 9]
+```
 
-- **Abstração e igualdade em `Moeda.java`:** Define o atributo `protected double valor`, os métodos abstratos `info()` e `converter()`, e sobrescreve `equals(Object obj)` comparando tipo (`getClass()`) e valor (`Double.compare`) para permitir a remoção na lista[cite: 9].
-- **Taxas e formatação nas subclasses:** `Real.java` retorna o próprio `valor` na conversão[cite: 8], `Dolar.java` multiplica por `5.20` e `Euro.java` multiplica por `6.00`[cite: 11], cada uma implementando `info()` e `converter()`[cite: 8, 11].
+- **Abstração e igualdade em `Moeda.java`:** Define o atributo `protected double valor`, os métodos abstratos `info()` e `converter()`, e sobrescreve `equals(Object obj)` comparando tipo (`getClass()`) e valor (`Double.compare`) para permitir a remoção na lista.
+- **Taxas e formatação nas subclasses:** `Real.java` retorna o próprio `valor` na conversão[cite: 8], `Dolar.java` multiplica por `5.20` e `Euro.java` multiplica por `6.00`[cite: 11], cada uma implementando `info()` e `converter()`.
 - **Coleção e soma total em `Cofrinho.java`:** Encapsula um `ArrayList<Moeda>` com métodos para `adicionar`, `remover`, `listagemMoedas()` (chamando `m.info()` em cada item) e `totalConvertido()` (somando `m.converter()`).
-- **Fluxo interativo em `Main.java`:** Usa `Scanner` e um loop `while (opcao != 0)` com `switch` para adicionar, remover, listar moedas e exibir o total convertido em `BRL` com `System.out.printf("Total acumulado no cofrinho (em Real): R$ %.2f\n", total)`[cite: 10].
-
-<br/>
-
-<div align="center">
-  <p>°•. ✦ .•° ────── ꒰ ✦ ꒱ ────── °•. ✦ .•°</p>
-  <p><i>Feito por <b>Eduarda Gonçalves</b></i></p>
-</div>
-### ✦ Como Foi Construído
-
-- **Abstração e herança:** Superclasse abstrata `Moeda` definindo o atributo compartilhado de valor e os métodos esperados pelas subclasses `Real`, `Dolar` e `Euro`.
-- **Polimorfismo:** Sobrescrita de `info()` e `converter()` em cada subclasse para aplicar as taxas de câmbio e formatações específicas de cada moeda.
-- **Encapsulamento e coleções:** Classe `Cofrinho` encapsulando um `ArrayList<Moeda>` para adicionar, remover, listar e somar os valores convertidos em `BRL`.
-- **CLI interativa (`Main`):** Loop de menu no console para receber comandos do usuário e executar as operações do cofrinho.
-
-### ✦ Arquitetura do Projeto (`java-oop-digital-piggy-bank/`)
-
-| Arquivo | Descrição |
-| :--- | :--- |
-| `Main.java` | Menu interativo de console e controlador do fluxo do usuário |
-| `Cofrinho.java` | Gerencia o `ArrayList<Moeda>` e a conversão total para `BRL` |
-| `Moeda.java` | Classe base abstrata que define o contrato das moedas |
-| `Real.java` | Implementação do Real Brasileiro (`BRL`) |
-| `Dolar.java` | Implementação do Dólar Americano (`USD`) com conversão cambial |
-| `Euro.java` | Implementação do Euro (`EUR`) com conversão cambial |
+- **Fluxo interativo em `Main.java`:** Usa `Scanner` e um loop `while (opcao != 0)` com `switch` para adicionar, remover, listar moedas e exibir o total convertido em `BRL` com `System.out.printf("Total acumulado no cofrinho (em Real): R$ %.2f\n", total)`.
 
 <br/>
 
